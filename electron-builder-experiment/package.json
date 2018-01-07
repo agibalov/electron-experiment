@@ -1,0 +1,25 @@
+{
+  "name": "electron-builder-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "electron-webpack dev",
+    "dist:linux": "electron-builder build --linux --x64",
+    "dist:windows": "electron-builder build --windows --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.5.7",
+    "electron": "^1.7.10",
+    "electron-builder": "^19.52.1",
+    "electron-webpack": "^1.11.0",
+    "electron-webpack-ts": "^1.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.0"
+  }
+}
