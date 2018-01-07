@@ -4,9 +4,11 @@ let mainWindow: BrowserWindow | null;
 
 function createMainWindow() {
     const window = new BrowserWindow();
-    window.webContents.openDevTools();
 
     const isDevelopment = process.env.NODE_ENV !== 'production';
+    if(isDevelopment) {
+        window.webContents.openDevTools();
+    }
     const url = isDevelopment
         ? `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`
         : `file://${__dirname}/index.html`;
