@@ -4,9 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "./node_modules/.bin/electron .",
-    "dist": "./node_modules/.bin/electron-packager . test-app --platform=linux --arch=x64 --out build"
+    "run": "electron .",
+    "clean": "rm -rf ./build",
+    "dist:linux": "electron-packager . test-app --platform=linux --arch=x64 --out build",
+    "dist:windows": "electron-packager . test-app --platform=win32 --arch=x64 --out build"
   },
   "author": "",
   "license": "ISC",
