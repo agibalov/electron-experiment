@@ -30,7 +30,8 @@
     "core-js": "^2.5.3",
     "rxjs": "^5.5.6",
     "source-map-support": "^0.5.0",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "photon": "https://github.com/connors/photon.git#v0.1.2-alpha"
   },
   "resolutions": {
     "webpack-sources": "1.0.1"
