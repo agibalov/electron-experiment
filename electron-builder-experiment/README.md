@@ -1,6 +1,6 @@
 # electron-builder-experiment
 
-**NOTE:** Use `yarn` instead of `npm` to install NPM dependencies. See electron-userland/electron-webpack#58
+**Update 1/8:** there are some weird issues with dependency resolution. Basically, if you use `yarn` to install dependencies, `npm run-script run` doesn't work, while distributions work. If you use `npm` to install dependencies, `run` doesn't work, but distributions are fine.
 
 Use like this:
 
